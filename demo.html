@@ -2,20 +2,16 @@
 <head>
 </head>
 <body>
+<h1> Text to 801-921-5941</h1>
 
-<script src="http://webrtc.coderighteo.us/socket.io/socket.io.js"></script>
+  <form>
+    <input type="text" id="chat" placeholder="type and press enter to chat" />
+  </form>
+  <p id="status">Not connected</p>
+  <ul id="log"></ul>
 
-<script>
-    var socket = io.connect('http://webrtc.coderighteo.us');
+<script src="socket.io.js"></script>
 
-    socket.on('connection', function(){
-        console.log('ws connected');
-    });
-
-    socket.on('twilio', function(msg){
-        console.log('twilio', msg)
-        alert();
-    });
-</script>
+<script src="demo.js"></script>
 </body>
 </html>
